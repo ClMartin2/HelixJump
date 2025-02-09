@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132502e2c5268be4a84b9d4c6d454e1b, type: 3}
+  m_Name: Levels1
+  m_EditorClassIdentifier: 
+  nbRings: 20
+  startRing: {fileID: 3423610827167407667, guid: 0cbe0dbd46d39f743831ede8f802ed7c, type: 3}
+  endRing: {fileID: 6804500321538854596, guid: 6c6d7b566c505e14ebdc97f3fa2a69f6, type: 3}
+  rings:
+  - {fileID: 3423610827167407667, guid: 5fbdc10009f891a479a7073b13d629b9, type: 3}
+  - {fileID: 8212147220563932919, guid: 05d62f2dd6d021b418a5a856baa72fe6, type: 3}
+  - {fileID: 6034739915651310207, guid: c7bfc52b170ad874089160d5054ca04b, type: 3}
+  ringDistance: 1.9
+  rangeRotation: {x: -10, y: 10}
