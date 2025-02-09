@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnRings : MonoBehaviour
+public class RingsSpawner : MonoBehaviour
 {
     [SerializeField] private Levels level;
 
-	public static SpawnRings Instance;
-	public List<GameObject> allRings = new List<GameObject>();
+	public static RingsSpawner Instance;
+	public List<Ring> allRings = new List<Ring>();
 
 	private float yPos = 0;
 
@@ -37,7 +37,7 @@ public class SpawnRings : MonoBehaviour
 			_SpawnRings(level.rings[randomIndex], randomRotation);
 		}
 
-		GameObject LastRing = allRings[allRings.Count - 1];
+		GameObject LastRing = allRings[allRings.Count - 1].gameObject;
 		float heightLastRing = LastRing.GetComponent<MeshRenderer>().bounds.size.y;
 
 		GameObject endRing = _SpawnRings(level.endRing, Quaternion.identity);
@@ -53,7 +53,7 @@ public class SpawnRings : MonoBehaviour
         GameObject newRing = Instantiate(ring, new Vector3(transformPosition.x, yPos, transformPosition.z), rotation, transform);
         yPos -= level.ringDistance;
 
-		allRings.Add(newRing);
+		allRings.Add(newRing.GetComponent<Ring>());
 
 		return newRing;
 	}

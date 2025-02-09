@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7447339211683499343}
   - component: {fileID: 987762579722802592}
   - component: {fileID: 1063863238506006094}
+  - component: {fileID: 5326543207786581037}
+  - component: {fileID: 1736737854486739297}
   m_Layer: 0
   m_Name: EndRing
   m_TagString: Untagged
@@ -108,3 +110,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &5326543207786581037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804500321538854596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb83687bedcd8143b59d0358bb38daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childsContainer: {fileID: 6804500321538854596}
+  forceExplosion: 10
+  explosionRadius: 5
+  explosionPosition: {fileID: 2253802852384123816}
+  durationAnimScale: 0
+  curvenAnimScale: 0
+--- !u!114 &1736737854486739297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804500321538854596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3442afb823631eb4093f80cba161d753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
